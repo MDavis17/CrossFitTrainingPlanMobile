@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42F41C7F227F949600712647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F41C7E227F949600712647 /* AppDelegate.swift */; };
+		42F41C81227F949600712647 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F41C80227F949600712647 /* ViewController.swift */; };
+		42F41C84227F949600712647 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F41C82227F949600712647 /* Main.storyboard */; };
+		42F41C86227F949900712647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42F41C85227F949900712647 /* Assets.xcassets */; };
+		42F41C89227F949900712647 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F41C87227F949900712647 /* LaunchScreen.storyboard */; };
+		42F41C94227F949900712647 /* CrossFitTrainingPlanMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F41C93227F949900712647 /* CrossFitTrainingPlanMobileTests.swift */; };
+		42F41C9F227F949900712647 /* CrossFitTrainingPlanMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F41C9E227F949900712647 /* CrossFitTrainingPlanMobileUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42F41C90227F949900712647 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42F41C73227F949600712647 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42F41C7A227F949600712647;
+			remoteInfo = CrossFitTrainingPlanMobile;
+		};
+		42F41C9B227F949900712647 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42F41C73227F949600712647 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42F41C7A227F949600712647;
+			remoteInfo = CrossFitTrainingPlanMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42F41C7B227F949600712647 /* CrossFitTrainingPlanMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrossFitTrainingPlanMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42F41C7E227F949600712647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		42F41C80227F949600712647 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		42F41C83227F949600712647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42F41C85227F949900712647 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42F41C88227F949900712647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		42F41C8A227F949900712647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42F41C8F227F949900712647 /* CrossFitTrainingPlanMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrossFitTrainingPlanMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42F41C93227F949900712647 /* CrossFitTrainingPlanMobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossFitTrainingPlanMobileTests.swift; sourceTree = "<group>"; };
+		42F41C95227F949900712647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42F41C9A227F949900712647 /* CrossFitTrainingPlanMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrossFitTrainingPlanMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42F41C9E227F949900712647 /* CrossFitTrainingPlanMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossFitTrainingPlanMobileUITests.swift; sourceTree = "<group>"; };
+		42F41CA0227F949900712647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42F41C78227F949600712647 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42F41C8C227F949900712647 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42F41C97227F949900712647 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42F41C72227F949600712647 = {
+			isa = PBXGroup;
+			children = (
+				42F41C7D227F949600712647 /* CrossFitTrainingPlanMobile */,
+				42F41C92227F949900712647 /* CrossFitTrainingPlanMobileTests */,
+				42F41C9D227F949900712647 /* CrossFitTrainingPlanMobileUITests */,
+				42F41C7C227F949600712647 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42F41C7C227F949600712647 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42F41C7B227F949600712647 /* CrossFitTrainingPlanMobile.app */,
+				42F41C8F227F949900712647 /* CrossFitTrainingPlanMobileTests.xctest */,
+				42F41C9A227F949900712647 /* CrossFitTrainingPlanMobileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42F41C7D227F949600712647 /* CrossFitTrainingPlanMobile */ = {
+			isa = PBXGroup;
+			children = (
+				42F41C7E227F949600712647 /* AppDelegate.swift */,
+				42F41C80227F949600712647 /* ViewController.swift */,
+				42F41C82227F949600712647 /* Main.storyboard */,
+				42F41C85227F949900712647 /* Assets.xcassets */,
+				42F41C87227F949900712647 /* LaunchScreen.storyboard */,
+				42F41C8A227F949900712647 /* Info.plist */,
+			);
+			path = CrossFitTrainingPlanMobile;
+			sourceTree = "<group>";
+		};
+		42F41C92227F949900712647 /* CrossFitTrainingPlanMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				42F41C93227F949900712647 /* CrossFitTrainingPlanMobileTests.swift */,
+				42F41C95227F949900712647 /* Info.plist */,
+			);
+			path = CrossFitTrainingPlanMobileTests;
+			sourceTree = "<group>";
+		};
+		42F41C9D227F949900712647 /* CrossFitTrainingPlanMobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				42F41C9E227F949900712647 /* CrossFitTrainingPlanMobileUITests.swift */,
+				42F41CA0227F949900712647 /* Info.plist */,
+			);
+			path = CrossFitTrainingPlanMobileUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42F41C7A227F949600712647 /* CrossFitTrainingPlanMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42F41CA3227F949900712647 /* Build configuration list for PBXNativeTarget "CrossFitTrainingPlanMobile" */;
+			buildPhases = (
+				42F41C77227F949600712647 /* Sources */,
+				42F41C78227F949600712647 /* Frameworks */,
+				42F41C79227F949600712647 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrossFitTrainingPlanMobile;
+			productName = CrossFitTrainingPlanMobile;
+			productReference = 42F41C7B227F949600712647 /* CrossFitTrainingPlanMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42F41C8E227F949900712647 /* CrossFitTrainingPlanMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42F41CA6227F949900712647 /* Build configuration list for PBXNativeTarget "CrossFitTrainingPlanMobileTests" */;
+			buildPhases = (
+				42F41C8B227F949900712647 /* Sources */,
+				42F41C8C227F949900712647 /* Frameworks */,
+				42F41C8D227F949900712647 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42F41C91227F949900712647 /* PBXTargetDependency */,
+			);
+			name = CrossFitTrainingPlanMobileTests;
+			productName = CrossFitTrainingPlanMobileTests;
+			productReference = 42F41C8F227F949900712647 /* CrossFitTrainingPlanMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		42F41C99227F949900712647 /* CrossFitTrainingPlanMobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42F41CA9227F949900712647 /* Build configuration list for PBXNativeTarget "CrossFitTrainingPlanMobileUITests" */;
+			buildPhases = (
+				42F41C96227F949900712647 /* Sources */,
+				42F41C97227F949900712647 /* Frameworks */,
+				42F41C98227F949900712647 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42F41C9C227F949900712647 /* PBXTargetDependency */,
+			);
+			name = CrossFitTrainingPlanMobileUITests;
+			productName = CrossFitTrainingPlanMobileUITests;
+			productReference = 42F41C9A227F949900712647 /* CrossFitTrainingPlanMobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42F41C73227F949600712647 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Max Davis";
+				TargetAttributes = {
+					42F41C7A227F949600712647 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					42F41C8E227F949900712647 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 42F41C7A227F949600712647;
+					};
+					42F41C99227F949900712647 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 42F41C7A227F949600712647;
+					};
+				};
+			};
+			buildConfigurationList = 42F41C76227F949600712647 /* Build configuration list for PBXProject "CrossFitTrainingPlanMobile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42F41C72227F949600712647;
+			productRefGroup = 42F41C7C227F949600712647 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42F41C7A227F949600712647 /* CrossFitTrainingPlanMobile */,
+				42F41C8E227F949900712647 /* CrossFitTrainingPlanMobileTests */,
+				42F41C99227F949900712647 /* CrossFitTrainingPlanMobileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42F41C79227F949600712647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F41C89227F949900712647 /* LaunchScreen.storyboard in Resources */,
+				42F41C86227F949900712647 /* Assets.xcassets in Resources */,
+				42F41C84227F949600712647 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42F41C8D227F949900712647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42F41C98227F949900712647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42F41C77227F949600712647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F41C81227F949600712647 /* ViewController.swift in Sources */,
+				42F41C7F227F949600712647 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42F41C8B227F949900712647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F41C94227F949900712647 /* CrossFitTrainingPlanMobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42F41C96227F949900712647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F41C9F227F949900712647 /* CrossFitTrainingPlanMobileUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42F41C91227F949900712647 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42F41C7A227F949600712647 /* CrossFitTrainingPlanMobile */;
+			targetProxy = 42F41C90227F949900712647 /* PBXContainerItemProxy */;
+		};
+		42F41C9C227F949900712647 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42F41C7A227F949600712647 /* CrossFitTrainingPlanMobile */;
+			targetProxy = 42F41C9B227F949900712647 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42F41C82227F949600712647 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42F41C83227F949600712647 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		42F41C87227F949900712647 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42F41C88227F949900712647 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42F41CA1227F949900712647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		42F41CA2227F949900712647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42F41CA4227F949900712647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CrossFitTrainingPlanMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CFSB.MaxDavis.CrossFitTrainingPlanMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42F41CA5227F949900712647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CrossFitTrainingPlanMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CFSB.MaxDavis.CrossFitTrainingPlanMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		42F41CA7227F949900712647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CrossFitTrainingPlanMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CFSB.MaxDavis.CrossFitTrainingPlanMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrossFitTrainingPlanMobile.app/CrossFitTrainingPlanMobile";
+			};
+			name = Debug;
+		};
+		42F41CA8227F949900712647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CrossFitTrainingPlanMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CFSB.MaxDavis.CrossFitTrainingPlanMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrossFitTrainingPlanMobile.app/CrossFitTrainingPlanMobile";
+			};
+			name = Release;
+		};
+		42F41CAA227F949900712647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CrossFitTrainingPlanMobileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CFSB.MaxDavis.CrossFitTrainingPlanMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CrossFitTrainingPlanMobile;
+			};
+			name = Debug;
+		};
+		42F41CAB227F949900712647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CrossFitTrainingPlanMobileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CFSB.MaxDavis.CrossFitTrainingPlanMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CrossFitTrainingPlanMobile;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42F41C76227F949600712647 /* Build configuration list for PBXProject "CrossFitTrainingPlanMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42F41CA1227F949900712647 /* Debug */,
+				42F41CA2227F949900712647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42F41CA3227F949900712647 /* Build configuration list for PBXNativeTarget "CrossFitTrainingPlanMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42F41CA4227F949900712647 /* Debug */,
+				42F41CA5227F949900712647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42F41CA6227F949900712647 /* Build configuration list for PBXNativeTarget "CrossFitTrainingPlanMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42F41CA7227F949900712647 /* Debug */,
+				42F41CA8227F949900712647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42F41CA9227F949900712647 /* Build configuration list for PBXNativeTarget "CrossFitTrainingPlanMobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42F41CAA227F949900712647 /* Debug */,
+				42F41CAB227F949900712647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42F41C73227F949600712647 /* Project object */;
+}
