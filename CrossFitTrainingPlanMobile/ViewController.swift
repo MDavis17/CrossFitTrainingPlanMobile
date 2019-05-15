@@ -16,12 +16,44 @@ class ViewController: UIViewController {
     @IBOutlet weak var powerLabel: UILabel!
     @IBOutlet weak var runningLabel: UILabel!
     @IBOutlet weak var dateTxtField: UITextField!
+    let datePicker = UIDatePicker()
     
     var weekdays = [1:"Sunday",2:"Monday",3:"Tuesday",4:"Wednesday",5:"Thursday",6:"Friday",7:"Saturday"]
     var months = [1:"January",2:"February",3:"March",4:"April",5:"May",6:"June",7:"July",8:"August",9:"September",10:"October",11:"November",12:"December"]
     
-    func getWodData() {
-        let urlString = "http://crossfittrainingplanbackend.cfapps.io/wod"
+    @IBAction func selectDate(_ sender: Any) {
+        showDatePicker()
+    }
+    
+    func showDatePicker() {
+        //format date
+        datePicker.datePickerMode = .date
+        
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(donePicker))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelDatePicker))
+        toolBar.setItems([cancelButton,spaceButton,doneButton], animated: false)
+        dateTxtField.inputAccessoryView = toolBar
+        dateTxtField.inputView = datePicker
+    }
+    
+    @objc func donePicker() {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM/dd/yyyy"
+        let dateStr = formatter.string(from: datePicker.date)
+        dateTxtField.text = dateStr
+        self.view.endEditing(true)
+        getWodData(date: dateStr)
+    }
+    
+    @objc func cancelDatePicker() {
+        self.view.endEditing(true)
+    }
+    
+    func getWodData(date: String) {
+        let urlString = "http://crossfittrainingplanbackend.cfapps.io/wod?date="+date
         
         guard let url = URL(string: urlString) else {
             print("Error: cannot create URL")
@@ -64,21 +96,6 @@ class ViewController: UIViewController {
             }
         }
         task.resume()
-        
-//        let url = "www.google.com"
-//        let request: NSMutableURLRequest = NSMutableURLRequest(url: NSURL(string: url)! as URL)
-//        request.httpMethod = "GET"
-//        let session = URLSession.shared
-//        let task = session.dataTask(with: request as URLRequest, completionHandler: {data, response, error -> Void in
-//            if(error != nil){
-//
-//            } else{
-//                print(data)
-////                let result = JSON(data: data!)
-//
-//            }
-//        })
-//        task.resume()
     }
     
     override func viewDidLoad() {
@@ -92,12 +109,10 @@ class ViewController: UIViewController {
         let day = calendar.component(.day, from: date)
         let weekday = weekdays[calendar.component(.weekday, from: date)] as! String
         
-        dayLabel.text = weekday+" "+month+" "+String(day)+" "+String(year)
         dateTxtField.text = String(monthNum)+"/"+String(day)+"/"+String(year)
         
-        getWodData()
+        getWodData(date: String(monthNum)+"/"+String(day)+"/"+String(year))
     }
-    @IBOutlet weak var dayLabel: UILabel!
     
     
 
