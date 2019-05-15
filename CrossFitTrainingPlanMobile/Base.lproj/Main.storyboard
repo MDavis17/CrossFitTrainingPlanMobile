@@ -131,10 +131,15 @@
                     <connections>
                         <outlet property="dateTxtField" destination="hYH-ge-FJs" id="dxC-uK-8np"/>
                         <outlet property="gymnasticsLabel" destination="vjc-UD-7CT" id="OBU-pM-M9w"/>
+                        <outlet property="gymnasticsSwitch" destination="hmG-tg-YYe" id="I1B-27-Vo7"/>
                         <outlet property="metconLabel" destination="ROr-w1-IQs" id="pjG-AY-Rgm"/>
+                        <outlet property="metconSwitch" destination="a49-zp-Ghg" id="Luh-eS-BN5"/>
                         <outlet property="olympicLabel" destination="nwY-Xl-FUh" id="Ehg-mA-ZVc"/>
+                        <outlet property="olympicSwitch" destination="b8Q-dW-7a5" id="aVs-HS-v3w"/>
                         <outlet property="powerLabel" destination="K7x-6M-l0Y" id="2eo-2Y-svR"/>
+                        <outlet property="powerSwitch" destination="Iwe-Og-HE8" id="eCK-rn-Qjl"/>
                         <outlet property="runningLabel" destination="6wh-7c-hyh" id="rg2-JP-98s"/>
+                        <outlet property="runningSwitch" destination="QUu-G9-kdy" id="8cN-tr-dDv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

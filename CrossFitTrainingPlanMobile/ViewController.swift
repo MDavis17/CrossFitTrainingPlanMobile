@@ -17,6 +17,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var runningLabel: UILabel!
     @IBOutlet weak var dateTxtField: UITextField!
     let datePicker = UIDatePicker()
+    @IBOutlet weak var metconSwitch: UISwitch!
+    @IBOutlet weak var gymnasticsSwitch: UISwitch!
+    @IBOutlet weak var olympicSwitch: UISwitch!
+    @IBOutlet weak var powerSwitch: UISwitch!
+    @IBOutlet weak var runningSwitch: UISwitch!
     
     var weekdays = [1:"Sunday",2:"Monday",3:"Tuesday",4:"Wednesday",5:"Thursday",6:"Friday",7:"Saturday"]
     var months = [1:"January",2:"February",3:"March",4:"April",5:"May",6:"June",7:"July",8:"August",9:"September",10:"October",11:"November",12:"December"]
@@ -83,11 +88,24 @@ class ViewController: UIViewController {
                 
                 // update the workout labels
                 DispatchQueue.main.async {
+                    // fill in workout parts
                     self.metconLabel.text = (json["metcon"] as! String)
                     self.gymnasticsLabel.text = (json["gymnastics"] as! String)
                     self.olympicLabel.text = (json["oly"] as! String)
                     self.powerLabel.text = (json["power"] as! String)
                     self.runningLabel.text = (json["running"] as! String)
+                    
+                    // fill in status switches
+                    let switches : [String:UISwitch] = ["metconStatus":self.metconSwitch,"gymnasticsStatus":self.gymnasticsSwitch,"olyStatus":self.olympicSwitch,"powerStatus":self.powerSwitch,"runningStatus":self.runningSwitch]
+                    
+                    for status in switches.keys {
+                        if (json[status] as! String) == "FALSE" {
+                            switches[status]!.isOn = false;
+                        }
+                        else {
+                            switches[status]!.isOn = true;
+                        }
+                    }
                 }
 
             } catch  {
