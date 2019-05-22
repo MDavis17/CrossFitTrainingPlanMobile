@@ -115,6 +115,66 @@ class ViewController: UIViewController {
         }
         task.resume()
     }
+    @IBAction func changeSwitchValue(_ sender: Any) {
+        toggleCompletion(senderSwitch: sender as! UISwitch)
+    }
+    
+    func toggleCompletion(senderSwitch:UISwitch) {
+        let id = senderSwitch.restorationIdentifier as! String
+        let col:String
+        let date:String = dateTxtField.text!
+        let newState:String = String(senderSwitch.isOn)
+        
+        switch id {
+        case "metcon":
+            col = "C"
+        case "gymnastics":
+            col = "E"
+        case "oly":
+            col = "G"
+        case "power":
+            col = "I"
+        case "running":
+            col = "K"
+        default:
+            col = ""
+        }
+        
+        let urlString = "http://crossfittrainingplanbackend.cfapps.io/completion?date="+date+"&partCol="+col+"&newState="+newState
+        
+        guard let url = URL(string: urlString) else {
+            print("Error: cannot create URL")
+            return
+        }
+        let urlRequest = URLRequest(url: url)
+        
+        let session = URLSession.shared
+        
+        let task = session.dataTask(with: urlRequest) { data, response, error in
+            //            print("data: ",data)
+            //            print("response:",response)
+            //            print("error:",error)
+            
+            guard let responseData = data else {
+                print("Error: did not receive data")
+                return
+            }
+            do {
+                guard let json = try JSONSerialization.jsonObject(with: responseData, options: [])
+                    as? [String:Any] else {
+                        
+                        print("error trying to convert data to JSON")
+                        return
+                }
+                print(json)
+                
+            } catch  {
+                print("error trying to convert data to JSON")
+                return
+            }
+        }
+        task.resume()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
