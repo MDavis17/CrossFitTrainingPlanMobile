@@ -180,16 +180,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         let date = Date()
-        let calendar = Calendar.current
-        let year = calendar.component(.year, from: date)
-        let monthNum = calendar.component(.month, from: date)
-        let month = months[monthNum] as! String
-        let day = calendar.component(.day, from: date)
-        let weekday = weekdays[calendar.component(.weekday, from: date)] as! String
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM/dd/yyyy"
+        let dateStr = formatter.string(from: date)
         
-        dateTxtField.text = String(monthNum)+"/"+String(day)+"/"+String(year)
-        
-        getWodData(date: String(monthNum)+"/"+String(day)+"/"+String(year))
+        dateTxtField.text = dateStr
+        getWodData(date: dateStr)
     }
     
     
