@@ -22,6 +22,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var olympicSwitch: UISwitch!
     @IBOutlet weak var powerSwitch: UISwitch!
     @IBOutlet weak var runningSwitch: UISwitch!
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var lastButton: UIButton!
     
     var weekdays = [1:"Sunday",2:"Monday",3:"Tuesday",4:"Wednesday",5:"Thursday",6:"Friday",7:"Saturday"]
     var months = [1:"January",2:"February",3:"March",4:"April",5:"May",6:"June",7:"July",8:"August",9:"September",10:"October",11:"November",12:"December"]
@@ -119,6 +121,38 @@ class ViewController: UIViewController {
         toggleCompletion(senderSwitch: sender as! UISwitch)
     }
     
+    @IBAction func getNextWOD(_ sender: Any) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM/dd/yyyy"
+        let date = formatter.date(from: dateTxtField.text!)
+        let nextDate = date?.addingTimeInterval(86400) // add one day (seconds)
+        dateTxtField.text = formatter.string(from: nextDate!)
+        getWodData(date: formatter.string(from: nextDate!))
+    }
+    
+    @IBAction func getLastWOD(_ sender: Any) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM/dd/yyyy"
+        let date = formatter.date(from: dateTxtField.text!)
+        let nextDate = date?.addingTimeInterval(-86400) // subtract one day (seconds)
+        dateTxtField.text = formatter.string(from: nextDate!)
+        getWodData(date: formatter.string(from: nextDate!))
+    }
+    @IBAction func getTodaysWOD(_ sender: Any) {
+        getTodaysWOD()
+    }
+    
+    func getTodaysWOD() {
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM/dd/yyyy"
+        let dateStr = formatter.string(from: date)
+        
+        dateTxtField.text = dateStr
+        getWodData(date: dateStr)
+    }
+    
+    
     func toggleCompletion(senderSwitch:UISwitch) {
         let id = senderSwitch.restorationIdentifier as! String
         let col:String
@@ -178,14 +212,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        let date = Date()
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MM/dd/yyyy"
-        let dateStr = formatter.string(from: date)
-        
-        dateTxtField.text = dateStr
-        getWodData(date: dateStr)
+        getTodaysWOD()
     }
     
     
